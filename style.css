@@ -15,6 +15,12 @@ header>nav>button:focus {
 .navbar a:focus {
     outline: none;
 }
+.navbar a span:hover {
+    padding-bottom: 0.3em;
+}
+.navbar a span:hover {
+    border-bottom: solid;
+}
 .navbar .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link:hover {
     color: black;
 }
@@ -22,7 +28,11 @@ header>nav>button:focus {
     font-family: 'Times New Roman', Times, serif;
     font-size: 0.9em;
 }
+nav.scrolled {
+ background-color: rgb(231, 229, 208, 0.9);
+ transition: background-color 300ms linear;}
 .section-name {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
     font-size: 2.2em;
@@ -47,7 +57,11 @@ section.about div.about-info {
     font-size: 4em;
 }
 .about-footer .carousel-item .blockquote p span:nth-of-type(2) {
-    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+.about-footer .carousel-item:nth-of-type(3) .blockquote, .about-footer .carousel-item:nth-of-type(3) .blockquote .blockquote-footer {
+    color: black;
 }
 .about-footer .carousel-item .blockquote .blockquote-footer {
     font-size: 0.5em;
@@ -69,10 +83,11 @@ section.about div.about-info {
 }
 .team div.corey-miller-info p, .team div.kat-von-d-info p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 1.5em 0;
 }
 .team div.corey-miller-info .btn:focus, .team div.kat-von-d-info .btn:focus, .contact-us-info .btn:focus {
+    -webkit-box-shadow: none;
     box-shadow: none;
     outline: none;
 }
@@ -103,24 +118,33 @@ section.about div.about-info {
     padding: 0 5%;
 }
 .team div.subscribe-news p {
+    font-size: 0.8em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.team div.subscribe-news p span {
     margin-bottom: 2em;
-    font-size: 1em;
+    font-size: 1.1em;
+    font-family: 'Times New Roman', Times, serif;
 }
 .subscribe-news form input {
     border-radius: 0;
     border-color: black;
 }
 .subscribe-news form input:focus {
+    -webkit-box-shadow: none;
     box-shadow: none;
     outline: none;
     border-color: black;
 }
 .subscribe-news form .btn {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9em;
     background: #9a977a;
     border-radius: 0;
     color: white;
 }
 .subscribe-news form .btn:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgb(204, 200, 182);
     box-shadow: 0 0 0 0.2rem rgb(204, 200, 182);
     outline: none;
 }
@@ -129,8 +153,18 @@ section.about div.about-info {
     background-size: cover;
     height: 350px;
 }
+.team-footer p {
+    color: #ccc8b6;
+    font-size: 3em;
+}
+.team-footer p:nth-of-type(2) {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
 /*Галерея*/
 .gallery-name {
+    -ms-flex-preferred-size: 40%;
     flex-basis: 40%;
     background: #afac9c;
 }
@@ -163,7 +197,10 @@ section.about div.about-info {
     left: 50%;
     position: absolute;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, -webkit-transform 0.35s;
+    -o-transition: opacity 0.35s, transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
     -webkit-transform: translate3d(-50%,-50%,0);
     transform: translate3d(-50%,-50%,0);
     -webkit-transform-origin: 50%;
@@ -191,7 +228,10 @@ section.about div.about-info {
 .gallery-image  a i, .about-gallery-image a i {
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, -webkit-transform 0.35s;
+    -o-transition: opacity 0.35s, transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
     padding: 10px;
     font-size: 20px;
 }
@@ -222,6 +262,14 @@ section.about div.about-info {
 section.contact-us .contact-us-info {
     padding: 10% 0 10% 5%;
 }
+section.contact-us .contact-us-info p:first-child {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}
+section.contact-us .contact-us-info p:not(:first-child) {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
 section.contact-us .contact-form {
     padding: 10% 5%;
 }
@@ -230,21 +278,29 @@ section.contact-us .contact-form {
     border-color: black;
 }
 .contact-form form input:focus, .contact-form form textarea:focus {
+    -webkit-box-shadow: none;
     box-shadow: none;
     outline: none;
     border-color: black;
 }
 .contact-us .contact-form .btn {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9em;
     background: #9a977a;
     border-radius: 0;
     color: white;
 }
 .contact-us .contact-form .btn:focus {
-    box-shadow: 0 0 0 0.2rem rgb(204, 200, 182);
+    -webkit-box-shadow: 0 0 0 0.2rem rgb(204, 200, 182);
+            box-shadow: 0 0 0 0.2rem rgb(204, 200, 182);
     outline: none;
 }
 .contact-us-info ul a i {
     font-size: 1.5em;
+}
+.map-responsive img {
+    left: 46%;
+    top: 39%;
 }
 .map-responsive {
     overflow: hidden;
@@ -260,30 +316,26 @@ section.contact-us .contact-form {
     position: absolute;
 }
 body>footer {
-    min-height: 350px;
     background-color: #aeaeae;
 }
 body>footer p {
-    margin-bottom: 0;
-    bottom: 5%;
-    left: 50%;
-    margin-left: -66px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.8em;
 }
 .team a i:hover, .contact-us a i:hover {
     color: cyan;
 }
 
 @media only all and (max-width: 1199.98px) {
-    body>footer {
-        min-height: 220px;
-    }
+
 }
 @media only all and (max-width: 991.98px) {
     section.about div.about-info {
-    background: url(images/about-logo.gif) no-repeat center 12%;
+        background: url(images/about-logo.gif) no-repeat center 12%;
     }
     .gallery-name {
-    flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     }
     header {
         min-height: 350px;
@@ -306,7 +358,7 @@ body>footer p {
 }
 @media only all and (max-width: 767.98px) {
     section.about div.about-info {
-    background: url(images/about-logo.gif) no-repeat center 10%;
+        background: url(images/about-logo.gif) no-repeat center 10%;
     }
     .about .about-name {
         padding: 15% 0;
@@ -314,12 +366,12 @@ body>footer p {
 }
 @media only all and (max-width: 575.98px) {
     section.about div.about-info {
-    background: none;
+        background: none;
     }
     section.contact-us .contact-form {
         padding: 0;
     }
     section.contact-us .contact-us-info {
-    padding-bottom: 0;
+        padding-bottom: 0;
 }
 }

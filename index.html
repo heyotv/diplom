@@ -8,15 +8,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" type="text/css" media="all and (min-width: 320px)">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <a name="home"></a>
-        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-faded align-items-start">
+        <nav id="navbar" class="navbar fixed-top navbar-expand-md navbar-light bg-faded align-items-start">
             <a class="navbar-brand d-md-none" href="#gallery"><img src="images/logo.png" alt="logo"></a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -367,7 +369,7 @@
                                         <span>I am canvas of my expiriences, my story is etched in lines and shading, and you can read it on my arms, my legs, my shoulders, and my stomatch.</span>
                                         <span><sub>&rdquo;</sub></span>
                                     </p>
-                                    <footer class="blockquote-footer text-right text-white text-uppercase">Kat Von D</footer>
+                                    <footer class="blockquote-footer text-right text-uppercase">Kat Von D</footer>
                                 </blockquote>
                             </div>
                         </div>
@@ -454,7 +456,11 @@
                     </div>
             </div>
             <div class="row no-gutters">
-                <div class="col team-footer d-lg-block d-none"></div>
+                <div class="col align-items-center justify-content-center team-footer flex-column d-lg-flex d-none">
+                    <p class="text-center mb-0"><i class="fab fa-twitter"></i></p>
+                    <p class="text-center w-50">But who will thank us, even if we do something good? This is a world where only because of the tattoo we are mistaken
+                    for bandits.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -900,7 +906,8 @@
                     </div>
                     <div class="row no-gutters">
                         <div class="col d-none d-md-block">
-                            <p class="pt-4 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente porro itaque accusantium doloremque perspiciatis incidunt deleniti nam, voluptate mollitia in autem, alias veritatis et assumenda id maxime labore libero iste?</p>
+                            <p class="pt-4 text-center">The best way to get an accurate price range is through a consultation with an artist, if not in person, through the tattoo request form we mentioned above. In order for us to quote your idea, we take into consideration the subject of the tattoo, the placement on the body, the size, detail, etc.
+                            </p>
                         </div>
                     </div>
                     <div class="row no-gutters w-100 pt-3 pb-4">
@@ -968,30 +975,49 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="map">
         <a name="find"></a>
-        <div class="map-responsive d-md-block d-none">
+        <div class="map-responsive d-md-block d-none position-relative">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d106174.47181084892!2d-118.1303191!3d33.736051!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1564124725835!5m2!1sru!2sby"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d126206.12298379393!2d-118.18400248587203!3d33.77496973841471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sby!4v1564677954961!5m2!1sen!2sby"
                 width="1500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <img class="position-absolute" src="images/pointer.png" alt="">
         </div>
     </section>
-    <footer class="align-items-center d-flex position-relative">
+    <footer class="footer align-items-center d-flex position-relative">
         <div class="container-fluid footer no-gutters">
-            <nav class="navbar navbar-expand navbar-light bg-faded align-items-start justify-content-center">
-                <div class="navbar-nav align-items-baseline  ">
-                    <a class="nav-item nav-link text-uppercase pr-4" href="#home"><span>Home</span></a>
-                    <a class="nav-item nav-link text-uppercase pr-4" href="#about"><span>About</span></a>
-                    <a class="nav-item nav-link text-uppercase pr-4" href="#team"><span>Team</span></a>
-                    <a class="navbar-brand mx-2 d-md-inline pr-4 pl-2" href="#gallery"><img src="images/logo.png" alt="logo"></a>
-                    <a class="nav-item nav-link text-uppercase pr-4" href="#faq"><span>Faq</span></a>
-                    <a class="nav-item nav-link text-uppercase pr-4" href="#find"><span>Find us</span></a>
-                    <a class="nav-item nav-link text-uppercase" href="#contact"><span>Contact</span></a>
+            <div class="row flex-column">
+                <div class="col py-5 d-none d-lg-block">
+                    <nav class="navbar navbar-expand navbar-light bg-faded align-items-start justify-content-center">
+                        <div class="navbar-nav align-items-baseline  ">
+                            <a class="nav-item nav-link text-uppercase pr-4" href="#home"><span>Home</span></a>
+                            <a class="nav-item nav-link text-uppercase pr-4" href="#about"><span>About</span></a>
+                            <a class="nav-item nav-link text-uppercase pr-4" href="#team"><span>Team</span></a>
+                            <a class="navbar-brand mx-2 d-md-inline pr-4 pl-2" href="#gallery"><img src="images/logo.png" alt="logo"></a>
+                            <a class="nav-item nav-link text-uppercase pr-4" href="#faq"><span>Faq</span></a>
+                            <a class="nav-item nav-link text-uppercase pr-4" href="#find"><span>Find us</span></a>
+                            <a class="nav-item nav-link text-uppercase" href="#contact"><span>Contact</span></a>
+                        </div>
+                    </nav>
                 </div>
-            </nav>
-            <p class="position-absolute">all rights reserved</p>
-        </div>
-        
+                <div class="col align-self-end">
+                    <p class="text-center pb-2 pt-2 mb-0">2019 LAInkTattoo. All rights reserved - Designed by Vitali Tumilovich</p>
+                </div>
+            </div>
+        </div>  
     </footer>
+    <script>
+        $(function () {
+                $(document).scroll(function () {
+                    var $head = $("#header");
+                    var $nav = $("#navbar");
+                    $nav.toggleClass('scrolled',
+
+                        $(this).scrollTop() > $head.height()
+
+                    );
+                });
+            });
+    </script>
 </body>
 </html>
