@@ -373,5 +373,8 @@ body>footer p {
     }
     section.contact-us .contact-us-info {
         padding-bottom: 0;
-}
+    }
+    section.team .corey-miller img, section.team .kat-von-d img {
+        width: 100%;
+    }
 }
