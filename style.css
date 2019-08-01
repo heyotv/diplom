@@ -10,8 +10,11 @@ header {
     position: relative;
 }
 header>nav>button:focus {
-    outline: 5px auto;
+    outline: none;
     border: solid 2px;
+}
+.navbar a:focus {
+    outline: none;
 }
 .navbar .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link:hover {
     color: black;
