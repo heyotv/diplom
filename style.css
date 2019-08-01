@@ -9,6 +9,10 @@ header {
     min-height: 500px;
     position: relative;
 }
+header>nav>button:focus {
+    outline: 5px auto;
+    border: solid 2px;
+}
 .navbar .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link:hover {
     color: black;
 }
@@ -19,9 +23,9 @@ header {
 .section-name {
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 36px;
+    font-size: 2.2em;
     border: solid 10px;
-    padding: 10px 20px;
+    padding: 2% 0;
     width: 300px;
 }
 .about-name {
@@ -38,7 +42,13 @@ section.about div.about-info {
 .about-footer .carousel-item .blockquote sub {
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 3em;
+    font-size: 4em;
+}
+.about-footer .carousel-item .blockquote p span:nth-of-type(2) {
+    font-size: 1em;
+}
+.about-footer .carousel-item .blockquote .blockquote-footer {
+    font-size: 0.5em;
 }
 .blockquote-footer::after {
     content: "\00A0\2014";
@@ -247,18 +257,53 @@ section.contact-us .contact-form {
     width: 100%;
     position: absolute;
 }
-footer {
-    min-height: 500px;
+body>footer {
+    min-height: 350px;
     background-color: #aeaeae;
 }
+body>footer p {
+    margin-bottom: 0;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -66px;
+}
+.team a i:hover, .contact-us a i:hover {
+    color: cyan;
+}
 
-
-
-@media only all and (max-width: 991.98px)  {
+@media only all and (max-width: 1199.98px) {
+    body>footer {
+        min-height: 220px;
+    }
+}
+@media only all and (max-width: 991.98px) {
     .gallery-name {
     flex-basis: 100%;
     }
-    header, footer {
+    header {
         min-height: 350px;
     }
+    body>footer {
+        min-height: 30px;
+    }
+    body>footer .navbar {
+        display: none;
+    }
+    section.contact-us .contact-form {
+        padding: 0 5% 10%;
+    }
+    .team div.subscribe-news {
+    padding: 3% 5%;
+    }
+}
+@media only all and (max-width: 767.98px) {
+    
+}
+@media only all and (max-width: 575.98px) {
+    section.contact-us .contact-form {
+        padding: 0;
+    }
+    section.contact-us .contact-us-info {
+    padding-bottom: 0;
+}
 }

@@ -15,6 +15,7 @@
 </head>
 <body>
     <header>
+        <a name="home"></a>
         <nav class="navbar fixed-top navbar-expand-md navbar-light bg-faded align-items-start">
             <a class="navbar-brand d-md-none" href="#"><img src="images/logo.png" alt="logo"></a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -24,19 +25,20 @@
             <div class="d-md-flex d-block w-100">
                 <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav align-items-baseline">
-                        <a class="nav-item nav-link text-uppercase pr-4" href="#">Home</a>
-                        <a class="nav-item nav-link text-uppercase pr-4" href="#">About</a>
-                        <a class="nav-item nav-link text-uppercase pr-4" href="#">Team</a>
-                        <a class="navbar-brand mx-2 d-none d-md-inline pr-4 pl-2" href="#"><img src="images/logo.png" alt="logo"></a>
-                        <a class="nav-item nav-link text-uppercase pr-4" href="#">Faq</a>
-                        <a class="nav-item nav-link text-uppercase pr-4" href="#">Find us</a>
-                        <a class="nav-item nav-link text-uppercase" href="#">Contact</a>
+                        <a class="nav-item nav-link text-uppercase pr-4" href="#home"><span>Home</span></a>
+                        <a class="nav-item nav-link text-uppercase pr-4" href="#about"><span>About</span></a>
+                        <a class="nav-item nav-link text-uppercase pr-4" href="#team"><span>Team</span></a>
+                        <a class="navbar-brand mx-2 d-none d-md-inline pr-4 pl-2" href="#gallery"><img src="images/logo.png" alt="logo"></a>
+                        <a class="nav-item nav-link text-uppercase pr-4" href="#faq"><span>Faq</span></a>
+                        <a class="nav-item nav-link text-uppercase pr-4" href="#find"><span>Find us</span></a>
+                        <a class="nav-item nav-link text-uppercase" href="#contact"><span>Contact</span></a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <section class="about">
+        <a name="about"></a>
         <div class="container-fluid px-0">
             <div class="row no-gutters">
                 <div class="col-md-6 no-gutters about-name d-flex align-items-center justify-content-center">
@@ -375,6 +377,7 @@
         </div>
     </section>
     <section class="team">
+        <a name="team"></a>
         <div class="container-fluid px-0">
             <div class="row no-gutters">
                 <div class="col-lg-4 col-xs-12 team-name d-flex align-items-center justify-content-center">
@@ -440,7 +443,7 @@
                         <div class="triangle-left d-none d-sm-block"></div>
                         <div class="triangle-up d-sm-none d-block"></div>
                     </div>
-                    <div class="col-lg-4 col-xs-12 my-sm-5 my-lg-0 subscribe-news d-flex flex-column justify-content-center">
+                    <div class="col-lg-4 col-xs-12 subscribe-news d-flex flex-column justify-content-center">
                         <p class="text-uppercase text-left"><span class="font-weight-bold">newsletter</span><br>join thousands of other<br>people subscribe to our news</p>
                         <form class="w-100" action="">
                             <div class="form-group">
@@ -456,6 +459,7 @@
         </div>
     </section>
     <section class="gallery">
+        <a name="gallery"></a>
         <div class="container-fluid px-0">
             <div class="row no-gutters d-flex">
                 <div class="gallery-name col-xs-12 d-flex align-items-center justify-content-center">
@@ -885,60 +889,70 @@
         </div>
     </section>
     <section class="contact-us">
+        <a name="contact"></a>
         <div class="container-fluid">
             <div class="row no-gutters">
-                <div class="col-6 contact-us-info align-items-center justify-content-center d-flex flex-column">
-                        <h2 class="section-name text-uppercase font-weight-bold text-center">Contact us</h2>
-                        <p class="pt-4 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente porro itaque accusantium doloremque perspiciatis incidunt deleniti nam, voluptate mollitia in autem, alias veritatis et assumenda id maxime labore libero iste?</p>
-                        <div class="row w-100 no-gutters pt-3 pb-4">
-                            <div class="col pr-2">
-                                <p class="text-uppercase font-weight-bold">info:</p>
-                                <p>
-                                    <span class="text-uppercase">phone:</span><span class="font-weight-bold"> 323-969-9820</span>
-                                    <br>
-                                    <span class="text-uppercase">fax:</span><span class="font-weight-bold"> 323-969-9820</span>
-                                    <br>
-                                    <span class="text-uppercase">email:</span><span class="font-weight-bold"> management@inktattoo.net</span>
-                                    <br>
-                                    <span class="text-uppercase">adress:</span><span class="font-weight-bold"> 449 E 3rd St, Long Beach, CA 90802, USA</span></p>
-                            </div>
-                            <div class="col">
-                                <p class="text-uppercase font-weight-bold">work hours:</p>
-                                <p>
-                                    <span class="text-uppercase">monday - friday:</span>
-                                    <span class="text-uppercase font-weight-bold">09am - 18pm</span>
-                                    <br>
-                                    <span class="text-uppercase">saturday:</span>
-                                    <span class="text-uppercase font-weight-bold">09am - 1pm</span>
-                                    <br>
-                                    <span class="text-uppercase">sunday:</span>
-                                    <span class="text-uppercase font-weight-bold">closed</span>
-                                </p>
-                            </div>
+                <div class="col-lg-6 col-md-12 contact-us-info align-items-center justify-content-center d-flex flex-column">
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <h2 class="section-name text-uppercase font-weight-bold text-center">Contact us</h2>
                         </div>
-                        <ul class="flex-row d-flex list">
-                            <a href="https://www.facebook.com/LAInk/" target="la-ink-info" class="btn btn-social-icon">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://twitter.com/miamiink_laink" target="la-ink-info" class="btn btn-social-icon">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://www.tumblr.com/tagged/la-ink" target="la-ink-info" class="btn btn-social-icon">
-                                <i class="fab fa-tumblr"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/laink" target="la-ink-info" class="btn btn-social-icon">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="https://www.instagram.com/highvoltagetat/?hl=en" target="la-ink-info" class="btn btn-social-icon">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://support.google.com/plus/answer/9195133?hl=en" target="la-ink-info" class="btn btn-social-icon">
-                                <i class="fab fa-google-plus-g"></i>
-                            </a>
-                        </ul>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col d-none d-md-block">
+                            <p class="pt-4 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente porro itaque accusantium doloremque perspiciatis incidunt deleniti nam, voluptate mollitia in autem, alias veritatis et assumenda id maxime labore libero iste?</p>
+                        </div>
+                    </div>
+                    <div class="row no-gutters w-100 pt-3 pb-4">
+                        <div class="col pr-2">
+                            <p class="text-uppercase font-weight-bold">info:</p>
+                            <p>
+                                <span class="text-uppercase">phone:</span><span class="font-weight-bold"> 323-969-9820</span>
+                                <br>
+                                <span class="text-uppercase">fax:</span><span class="font-weight-bold"> 323-969-9820</span>
+                                <br>
+                                <span class="text-uppercase">email:</span><span class="font-weight-bold"> management@inktattoo.net</span>
+                                <br>
+                                <span class="text-uppercase">adress:</span><span class="font-weight-bold"> 449 E 3rd St, Long Beach, CA 90802, USA</span>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p class="text-uppercase font-weight-bold">work hours:</p>
+                            <p>
+                                <span class="text-uppercase">monday - friday:</span>
+                                <span class="text-uppercase font-weight-bold">09am - 18pm</span>
+                                <br>
+                                <span class="text-uppercase">saturday:</span>
+                                <span class="text-uppercase font-weight-bold">09am - 1pm</span>
+                                <br>
+                                <span class="text-uppercase">sunday:</span>
+                                <span class="text-uppercase font-weight-bold">closed</span>
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="flex-row d-flex list">
+                        <a href="https://www.facebook.com/LAInk/" target="la-ink-info" class="btn btn-social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/miamiink_laink" target="la-ink-info" class="btn btn-social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.tumblr.com/tagged/la-ink" target="la-ink-info" class="btn btn-social-icon">
+                            <i class="fab fa-tumblr"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/laink" target="la-ink-info" class="btn btn-social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/highvoltagetat/?hl=en" target="la-ink-info" class="btn btn-social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://support.google.com/plus/answer/9195133?hl=en" target="la-ink-info" class="btn btn-social-icon">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </ul>
                 </div>
-                <div class="col-6 contact-form d-flex justify-content-center">
-                    <form class="w-100" action="">
+                <div class="col-lg-6 col-md-12 contact-form d-flex justify-content-center">
+                    <form class="w-100 d-none d-sm-block" action="">
                         <div class="form-group pb-4">
                             <input type="text" class="form-control" placeholder="FULL NAME">
                         </div>
@@ -955,26 +969,27 @@
         </div>
     </section>
     <section>
+        <a name="find"></a>
         <div class="map-responsive d-md-block d-none">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d106174.47181084892!2d-118.1303191!3d33.736051!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1564124725835!5m2!1sru!2sby"
                 width="1500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </section>
-    <footer class="align-items-center d-flex">
+    <footer class="align-items-center d-flex position-relative">
         <div class="container-fluid footer no-gutters">
             <nav class="navbar navbar-expand navbar-light bg-faded align-items-start justify-content-center">
                 <div class="navbar-nav align-items-baseline  ">
-                    <a class="nav-item nav-link text-uppercase pr-4" href="#">Home</a>
-                    <a class="nav-item nav-link text-uppercase pr-4" href="#">About</a>
-                    <a class="nav-item nav-link text-uppercase pr-4" href="#">Team</a>
-                    <a class="navbar-brand mx-2 d-md-inline pr-4 pl-2" href="#"><img src="images/logo.png" alt="logo"></a>
-                    <a class="nav-item nav-link text-uppercase pr-4" href="#">Faq</a>
-                    <a class="nav-item nav-link text-uppercase pr-4" href="#">Find us</a>
-                    <a class="nav-item nav-link text-uppercase" href="#">Contact</a>
-                </div>    
+                    <a class="nav-item nav-link text-uppercase pr-4" href="#home"><span>Home</span></a>
+                    <a class="nav-item nav-link text-uppercase pr-4" href="#about"><span>About</span></a>
+                    <a class="nav-item nav-link text-uppercase pr-4" href="#team"><span>Team</span></a>
+                    <a class="navbar-brand mx-2 d-md-inline pr-4 pl-2" href="#gallery"><img src="images/logo.png" alt="logo"></a>
+                    <a class="nav-item nav-link text-uppercase pr-4" href="#faq"><span>Faq</span></a>
+                    <a class="nav-item nav-link text-uppercase pr-4" href="#find"><span>Find us</span></a>
+                    <a class="nav-item nav-link text-uppercase" href="#contact"><span>Contact</span></a>
+                </div>
             </nav>
-            <p>all rights reserved</p>
+            <p class="position-absolute">all rights reserved</p>
         </div>
         
     </footer>
