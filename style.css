@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 header {
     background: url(images/header-bckgr.jpg) no-repeat center center;       
     height: 100%;
@@ -35,7 +34,7 @@ header>nav>button:focus {
     background: url(images/about-bckgr.jpg) no-repeat center center;
 }
 section.about div.about-info {
-    background: url(images/about-logo.gif) no-repeat center 20%;
+    background: url(images/about-logo.gif) no-repeat center 15%;
     padding: 12% 5%;
 }
 .about-info p {
@@ -280,6 +279,9 @@ body>footer p {
     }
 }
 @media only all and (max-width: 991.98px) {
+    section.about div.about-info {
+    background: url(images/about-logo.gif) no-repeat center 12%;
+    }
     .gallery-name {
     flex-basis: 100%;
     }
@@ -298,11 +300,22 @@ body>footer p {
     .team div.subscribe-news {
     padding: 3% 5%;
     }
+    .team .team-name, .gallery .gallery-name {
+        padding: 15% 0;
+    }
 }
 @media only all and (max-width: 767.98px) {
-    
+    section.about div.about-info {
+    background: url(images/about-logo.gif) no-repeat center 10%;
+    }
+    .about .about-name {
+        padding: 15% 0;
+    }
 }
 @media only all and (max-width: 575.98px) {
+    section.about div.about-info {
+    background: none;
+    }
     section.contact-us .contact-form {
         padding: 0;
     }
