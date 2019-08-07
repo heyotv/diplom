@@ -8,6 +8,10 @@ $(document).ready(function () {
         );
     });
 
+    $('.carousel').carousel({
+        interval: 1500
+    });
+
     $('[data-toggle="popover"]').popover();
 
     $('.icon-link').on('click', function() {
