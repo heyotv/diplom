@@ -59,6 +59,9 @@ section.about div.about-info {
     text-decoration: none;
     cursor: pointer;
 }
+.carousel-item {
+    height: 245px;
+}
 .about-footer .carousel-item .blockquote sub {
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
