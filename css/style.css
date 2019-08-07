@@ -32,10 +32,6 @@ header>nav>button:focus {
     font-family: 'Times New Roman', Times, serif;
     font-size: 0.9em;
 }
-nav.scrolled {
-    background-color: rgb(231, 229, 208, 0.9);
-    transition: background-color 300ms linear;
-}
 .section-name {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -62,12 +58,6 @@ section.about div.about-info {
 .about-gallery-image .overlay a:hover, .gallery-image .overlay a:hover {
     text-decoration: none;
     cursor: pointer;
-}
-.about-gallery-image .overlay .set2 a:last-child:focus, .gallery-image .overlay .set2 a:last-child:focus {
-    color:red;
-}
-.about-gallery-image .overlay .set2 a:first-child:focus, .gallery-image .overlay .set2 a:first-child:focus {
-    color:darkblue;
 }
 .about-footer .carousel-item .blockquote sub {
     font-style: italic;
@@ -344,6 +334,16 @@ body>footer p {
 }
 .team a i:hover, .contact-us a i:hover {
     color: #3ac9e8;
+}
+nav.scrolled {
+    background-color: rgb(231, 229, 208, 0.9);
+    transition: background-color 300ms linear;
+}
+.icon-blue {
+    color: darkblue;
+}
+.icon-red {
+    color: red;
 }
 @media only all and (max-width: 992px) {
     section.about div.about-info {

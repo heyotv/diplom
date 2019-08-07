@@ -10,4 +10,11 @@ $(document).ready(function () {
 
     $('[data-toggle="popover"]').popover();
 
+    $('.icon-link').on('click', function() {
+        $(this).children().toggleClass('icon-blue');
+    });
+
+    $('.icon-heart').on('click', function() {
+        $(this).children().toggleClass('icon-red');
+    });
 });
