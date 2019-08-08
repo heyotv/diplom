@@ -4,19 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>LA Ink Tattoo Studio</title>  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>LA Ink Tattoo Studio</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
     <header id="header">
-        <a name="home"></a>
+        <a id="home"></a>
         <nav id="navbar" class="navbar fixed-top navbar-expand-md navbar-light bg-faded align-items-start">
             <a class="navbar-brand d-md-none"><img src="images/logo.png" alt="logo" title="LA Ink logo"></a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -25,7 +22,7 @@
             </button>
             <div class="d-md-flex d-block w-100">
                 <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarNavAltMarkup">
-                    <div class="navbar-nav align-items-baseline">
+                    <div id="menu" class="navbar-nav align-items-baseline">
                         <a class="nav-item nav-link text-uppercase pr-4" href="#home"><span>Home</span></a>
                         <a class="nav-item nav-link text-uppercase pr-4" href="#about"><span>About</span></a>
                         <a class="nav-item nav-link text-uppercase pr-4" href="#team"><span>Team</span></a>
@@ -39,7 +36,7 @@
         </nav>
     </header>
     <section class="about">
-        <a name="about"></a>
+        <a id="about"></a>
         <div class="container-fluid px-0">
             <div class="row no-gutters">
                 <div class="col-md-6 no-gutters about-name d-flex align-items-center justify-content-center">
@@ -379,7 +376,7 @@
         </div>
     </section>
     <section class="team">
-        <a name="team"></a>
+        <a id="team"></a>
         <div class="container-fluid px-0">
             <div class="row no-gutters">
                 <div class="col-lg-4 col-xs-12 team-name d-flex align-items-center justify-content-center">
@@ -465,7 +462,7 @@
         </div>
     </section>
     <section class="gallery">
-        <a name="gallery"></a>
+        <a id="gallery"></a>
         <div class="container-fluid px-0">
             <div class="row no-gutters d-flex">
                 <div class="gallery-name col-xs-12 d-flex align-items-center justify-content-center">
@@ -895,7 +892,7 @@
         </div>
     </section>
     <section class="contact-us">
-        <a name="contact"></a>
+        <a id="contact"></a>
         <div class="container-fluid">
             <div class="row no-gutters">
                 <div class="col-lg-6 col-md-12 contact-us-info align-items-center justify-content-center d-flex flex-column">
@@ -960,7 +957,7 @@
                 </div>
                 <div class="col-lg-6 col-md-12 contact-form d-flex justify-content-center">
                     <form class="w-100 d-none d-sm-block" action="http://fe.it-academy.by/TestForm.php" method="GET" target="_blank">
-                        <a name="faq"></a>
+                        <a id="faq"></a>
                         <div class="form-group pb-4">
                             <input type="text" class="form-control" name="name" placeholder="FULL NAME">
                         </div>
@@ -977,7 +974,7 @@
         </div>
     </section>
     <section class="map">
-        <a name="find"></a>
+        <a id="find"></a>
         <div class="map-responsive d-lg-block d-none position-relative">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d126206.12298379393!2d-118.18400248587203!3d33.77496973841471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sby!4v1564677954961!5m2!1sen!2sby"
@@ -1007,6 +1004,9 @@
             </div>
         </div>  
     </footer>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="script/jquery.fancybox.min.js"></script>
 <script src="script/script.js"></script>
 </body>
